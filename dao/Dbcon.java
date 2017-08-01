@@ -1,6 +1,6 @@
 package com.huangguohang.www.dao;
 /**
- * ²Ù×÷Êı¾İ¿âdb_employeemanager,»ñÈ¡Êı¾İ¿âÁ¬½Ó
+ * æ“ä½œæ•°æ®åº“db_employeemanager,è·å–æ•°æ®åº“è¿æ¥
  */
 
 import java.sql.*;
@@ -11,19 +11,10 @@ public class Dbcon {
 	private static String dbUserName = "root";
 	private static String dbPassword = "123456";
 	
-	public Dbcon() {
-		try {
-			getCon().close();
-		} catch (Exception e) {
-			System.out.println("-----getCon-----"+e.getMessage());
-			e.printStackTrace();
-		}
-	}
-	
 	public Connection getCon() throws Exception{		
-		Class.forName(jdbcName);//¼ÓÔØÇı¶¯
+		Class.forName(jdbcName);//åŠ è½½é©±åŠ¨
 		Connection con = (Connection) DriverManager.getConnection(dbUrl, dbUserName, dbPassword);
-		//»ñÈ¡Êı¾İ¿âÁ¬½Ó
+		//è·å–æ•°æ®åº“è¿æ¥
 		return con;
 	}
 
