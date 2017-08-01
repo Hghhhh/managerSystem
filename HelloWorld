@@ -1,0 +1,8 @@
+```
+Class Demo {
+
+  public static void main(String[] margs) {
+    System.out.println("helloworld");
+  }
+}
+```
