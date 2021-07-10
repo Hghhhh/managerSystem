@@ -1,6 +1,2 @@
 # managerSystem
-
-#这是一个考核项目
->这是一个考核项目
-
-ok
+一个用JAVASWING+mysql做的员工管理系统
